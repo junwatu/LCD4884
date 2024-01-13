@@ -1,28 +1,30 @@
 # LCD4884
 Library for LCD4884 shield - Arduino
 
-[Visit the Article on my Blog !](http://horloge-skynet.weebly.com/arduino/lcd4884-shield)
-
-======
-
 ### How to use it
 
-
-Please consider starting write down your information in the header like in the example.  
-Now, complete the body of functions declared at the bottom, with the content you wish.  
-When you'll choose the entry in the menu, this content will be executed.  
+Please consider starting to write down your information in the header, like in the example.  
+Now, complete the body of functions declared at the bottom with your desired content.  
+When you choose the entry in the menu, this content will be executed.  
 
 To initialize the Class:  
-```lcd.initClass(projectName, NUM_MENU_ITEM) ```
+
+```c
+lcd.initClass(projectName, NUM_MENU_ITEM)
+```
 
 To show the menu on the screen:  
-```lcd.showMenu(menuList) ```
+
+```c
+lcd.showMenu(menuList)
+```
 
 To browse menu with the buttons:  
-```lcd.browseMenu(menuList, menuFunction) ```
 
+```c
+lcd.browseMenu(menuList, menuFunction)
+```
 
-======
 ### Access to Methods
 
 You can use also these methods:
@@ -35,9 +37,6 @@ You can use also these methods:
 ```clear(void) ```  
 ```init(void) ``` (to initialize the screen without menu or buttons operation)
 
-
-======
-======
 
 ## Notes
 * With this configuration, you have the Name of your project written centered at the top of the screen, and access to 4 submenus.
